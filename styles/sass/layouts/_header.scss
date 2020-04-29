@@ -1,0 +1,21 @@
+.header{
+    height: 100vh;
+    position: relative;
+    display: flex;
+
+    &-hero__image{
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        right: 0;
+        object-fit: cover; //Zoom into image so it doesn't look stretched out
+        object-position: top; //Want to see more of the top of the image
+
+        &.animate{
+            animation-name: fadein;
+            animation-duration: 2s;
+            animation-timing-function: ease-out ;
+        }
+    }
+}

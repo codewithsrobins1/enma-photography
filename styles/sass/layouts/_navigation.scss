@@ -1,0 +1,333 @@
+.nav{
+    background: $color-white;
+    z-index: 2;
+    width: 40%;
+    height: 15%;
+    color: $color-primary;
+
+    @include respond(desktop){
+        width: 45%;
+        height: 10%;
+    }
+
+    @include respond(tab-land){
+        width: 50%;
+        height: 7%;
+    }
+
+    @include respond(tab-port){
+        width: 100%;
+    }
+
+    @include respond(phone){
+        width: 100%;
+    }
+
+    //Closed Page Menu
+    &-closed{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 15%;  //Want same height as the nav
+        width: 40%;    //want same width as the nav
+        position: absolute;
+
+        @include respond(desktop){
+            width: 45%;
+            height: 10%;
+        }
+
+        @include respond(tab-land){
+            width: 50%;
+            height: 7%;
+        }
+
+        @include respond(tab-port){
+            width: 100%;
+        }
+
+        & h1 { 
+            font-size: 2.5rem;
+
+            @include respond(phone) {
+                font-size: 2rem;
+            }
+
+            @include respond(big-desktop) {
+                font-size: 3.5rem;
+            }
+
+        }
+
+        & .nav-links {
+            cursor: pointer;
+            display: flex;
+            width: 45%;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 1.5rem;
+
+            @include respond(big-desktop) {
+                font-size: 2.5rem;
+            }
+
+            @include respond(tab-land){
+                width: 0;
+            }
+
+            & li{
+                list-style: none;
+                transition: all .3s;
+                border-bottom: 2px solid transparent;
+                // padding-bottom: 5px;
+
+                &:hover{
+                    border-bottom: 2px solid $color-primary;
+                }
+            }
+        }
+    }
+
+
+    //Hidden Menu
+    &-open{
+        position: absolute;
+        width: 40%;
+        height: 85%;
+        top: 15%; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        opacity: 0%;
+        scroll-behavior: smooth;
+        pointer-events: none; //can't click on any items from the nav
+        overflow: scroll; /* Allowing scrolling for images */
+
+
+        @include respond(desktop){
+            width: 45%;
+            height: 90%;
+            top: 10%;
+        }
+
+        @include respond(tab-land){
+            width: 50%;
+            height: 93%;
+            top: 7%;
+        }
+
+        @include respond(tab-port){
+            width: 100%;
+            top: 10%;
+        }
+
+        @include respond(phone){
+            width: 100%;
+            top: 10%;
+        }
+
+        
+        &__about{
+            display: flex;
+            justify-content: space-around;
+            width: 90%;
+            margin: 5rem 0;
+
+            @include respond(phone) {
+                display: block;
+                width: 100%;
+            }
+            
+
+            &--photo{
+                height: 25em;
+
+                @include respond(big-desktop){
+                    height: 30em;
+                }
+
+                @include respond(phone){
+                    height: auto;
+                    max-height: 50rem;
+                    width: 100%;
+                };
+            }
+
+            &--info{
+                font-size: 1.25rem;
+                letter-spacing: 1px;
+                margin: 0rem 2rem;
+                text-align: center;
+                padding-top: 3rem;
+
+                @include respond(big-desktop){
+                    font-size: 1.75rem;
+                }
+
+                @include respond(tab-land){
+                    padding-top: 1rem;
+                    font-size: 1.2rem;
+                }
+
+                @include respond(tab-port){
+                    font-size: 1.5rem;
+                }
+
+                @include respond(phone){
+                    font-size: 1.5rem;
+                    padding: 2rem 0;
+                }
+
+                &--business{
+                    margin-top: 2rem;
+                    font-size: 1.25rem;
+                    letter-spacing: 1px;
+                    text-align: center;
+
+                    @include respond(big-desktop){
+                        font-size: 1.75rem;
+                    }
+
+                    @include respond(tab-land){
+                        font-size: 1.2rem;
+                    }
+
+                    @include respond(tab-port){
+                        font-size: 1.5rem;
+                    }
+
+                    @include respond(phone){
+                        font-size: 1.5rem;
+                    }
+
+                    &--email{
+                        font-weight: 800;
+                    }
+                }
+
+                &--icons{
+                    display: flex;
+                    justify-content: space-around;
+                    margin: 0 auto;
+                    margin-top: 2rem;
+                    width: 35%;
+
+                    & a {
+                        text-decoration: none;
+                        color: $color-primary;
+                    }
+
+                    & img{
+                        height: 2rem;
+                        width: 2rem;
+
+                        @include respond(tab-land){
+                        height: 1.75rem;
+                        width: 1.75rem;
+                        }
+
+                        @include respond(phone){
+                            font-size: 2rem;
+                        }
+
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+
+            
+        }
+
+        //Secondary Navbar for Photos Section
+        &__closet {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+
+            & h2{
+                font-size: 4rem;
+
+                @include respond(phone){
+                    font-size: 3rem;
+                }
+            }
+
+            &--list li{
+                padding-bottom: 1rem;
+                list-style: none;
+
+                & a{
+                    text-decoration: none;
+                    color: $color-primary;
+                    font-size: 1.5rem;
+                    border-bottom: 2px solid transparent;
+                    transition: all .3s;
+
+                    @include respond(big-desktop){
+                        font-size: 2rem;
+                    }
+
+                    @include respond(phone){
+                        font-size: 1.5rem;
+                    }
+
+                    &:hover{
+                        border-bottom: 2px solid $color-primary;
+                    }
+                }
+            }
+        }
+
+        &__images {         
+            height: 50%;
+            width: 100%; 
+            text-align: center;
+
+            @include respond(phone){
+                
+            }
+            
+            &--headers{
+                font-size: 2rem;
+                padding: 2rem 0;
+
+                @include respond(big-desktop){
+                    font-size: 2.5rem;
+                }
+            }
+
+            & img {
+                height: 25rem;
+                max-height: 35rem;
+
+                @include respond(desktop){
+                    height: 20rem;
+                }
+
+                @include respond(tab-land){
+                    height: 17rem;
+                }
+
+                @include respond(phone){
+                    height: 13rem;
+                }
+
+                @include respond(phone){
+                    height: auto;
+                    max-height: 60rem;
+                    width: 100%;
+                    margin: 0;
+                    
+                    &:not(:last-child) {
+                        margin-bottom: 3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/sass/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <title>Enma | Photography</title>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <!-- Main Navigation -->
+            <div class="nav-closed">
+                <h1>Enma | Photography</h1>
+                <ul class="nav-links">
+                    <li class="nav-links__explore">Explore</li>
+                </ul>
+            </div>
+
+            <!-- Hidden Menu -->
+            <div class="nav-open">
+                <!-- About Me Section --> 
+                <div class="nav-open__about">
+                    <img class="nav-open__about--photo" src="./imgs/aboutMe.jpg" alt="about me">
+                    <div class="nav-open__about--info">
+                        <p>Hi, I'm Enma and welcome to my lookbook. I'm a freelance photographer specialiizing in lifestyle photography.
+                            My main areas of focus are streetwear and apparel, architecture, and modelling. I also love travelling and being outdoors
+                            to capture landscape photos. 
+                        </p>
+                        <div class="nav-open__about--info--business">
+                            <p>For business inquiries, please contact me at <span class="nav-open__about--info--business--email">businessphotography@gmail.com</span></p>
+                        </div>
+                        <div class="nav-open__about--info--icons">
+                            <!-- "Icon made by Pixel perfect from www.flaticon.com" -->
+                            <a href="https://www.instagram.com/?hl=en" target="_blank"><img src="./imgs/instagram.svg" alt="instagram link"></a>
+                            <a href="https://twitter.com" target="_blank"><img src="./imgs/twitter.svg" alt="twitter link"></a>
+                            <a href="https://vsco.co/" target="_blank"><img src="./imgs/vsco.svg" alt="vsco link"></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Secondary Navbar for Photo Sections -->
+                <div class="nav-open__closet">
+                    <h2>Photos</h2>
+                    <ul class="nav-open__closet--list">
+                        <li><a href="#shoes">Shoes</a></li>
+                        <li><a href="#tops">Tops</a></li>
+                        <li><a href="#accessories">Accessories</a></li>
+                        <li><a href="#architecture">Architecture</a></li>
+                    </ul>
+                </div>
+
+                <!-- Lookbook Images --> 
+                <div class="nav-open__images">
+                    <div class="nav-open__images--shoes" id="shoes">
+                        <h1 class="nav-open__images--headers">Shoes</h1>
+                        <img class="nav-open__images--img" src="./imgs/shoes-1.jpg" alt="shoe image">
+                        <img class="nav-open__images--img" src="./imgs/shoes-2.jpg" alt="shoe image">
+                        <img class="nav-open__images--img" src="./imgs/shoes-3.jpg" alt="shoe image">
+                        <img class="nav-open__images--img" src="./imgs/shoes-4.jpg" alt="shoe image">
+                        <img class="nav-open__images--img" src="./imgs/shoes-5.jpg" alt="shoe image">
+                        <img class="nav-open__images--img" src="./imgs/shoes-6.jpg" alt="shoe image">
+                    </div>
+                    <div class="nav-open__images--tops" id="tops">
+                        <h1 class="nav-open__images--headers">Tops</h1>
+                        <img class="nav-open__images--img" src="./imgs/top-1.jpg" alt="top image">
+                        <img class="nav-open__images--img" src="./imgs/top-2.jpg" alt="top image">
+                        <img class="nav-open__images--img" src="./imgs/top-3.jpg" alt="top image">
+                        <img class="nav-open__images--img" src="./imgs/top-4.jpg" alt="top image">
+                    </div>
+                    <div class="nav-open__images--accessories" id="accessories">
+                        <h1 class="nav-open__images--headers">Accessories</h1>
+                        <img class="nav-open__images--img" src="./imgs/accessory-1.jpg" alt="accessory image">
+                        <img class="nav-open__images--img" src="./imgs/accessory-2.jpg" alt="accessory image">
+                        <img class="nav-open__images--img" src="./imgs/accessory-3.jpg" alt="accessory image">
+                        <img class="nav-open__images--img" src="./imgs/accessory-4.jpg" alt="accessory image">
+                        <img class="nav-open__images--img" src="./imgs/accessory-5.jpg" alt="accessory image">
+                        <img class="nav-open__images--img" src="./imgs/accessory-6.jpg" alt="accessory image">
+                    </div>
+                    <div class="nav-open__images--architecture" id="architecture">
+                        <h1 class="nav-open__images--headers">Architecture</h1>
+                        <img class="nav-open__images--img" src="./imgs/photography-1.jpg" alt="photography">
+                        <img class="nav-open__images--img" src="./imgs/photography-2.jpg" alt="photography">
+                        <img class="nav-open__images--img" src="./imgs/photography-3.jpg" alt="photography">
+                        <img class="nav-open__images--img" src="./imgs/photography-4.jpg" alt="photography">
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <img class="header-hero__image animate" src="./imgs/landingHero1.jpg" alt="hero image" id="hero-image">
+    </header>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineLite.min.js"></script>  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenLite.min.js"></script>      
+<script src="script.js"></script>
+</body>
+</html>

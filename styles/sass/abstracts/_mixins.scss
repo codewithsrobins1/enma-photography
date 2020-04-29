@@ -1,0 +1,29 @@
+
+//Media Query Mixins for Responsiveness
+    //If phone is passed, use media query with max-width 600px
+    //Media Queries are not affected by root default settings (ex: font size: 62.5%) (ems are best option) 1em = 16px
+@mixin respond($breakpoint){
+    @if $breakpoint == iphone {
+        @media only screen and (max-width: 24em) { @content }; //375px
+    }
+
+    @if $breakpoint == phone {
+        @media only screen and (max-width: 37.5em) { @content }; //600px
+    }
+
+    @if $breakpoint == tab-port {
+        @media only screen and (max-width: 56.25em) { @content }; //900px
+    }
+
+    @if $breakpoint == tab-land {
+        @media only screen and (max-width: 75em) { @content }; //1200px
+    }
+
+    @if $breakpoint == desktop {
+        @media only screen and (max-width: 93.75em) { @content }; //1500px
+    }
+
+    @if $breakpoint == big-desktop {
+        @media only screen and (min-width: 137.5em) { @content }; //2200px
+    }
+}

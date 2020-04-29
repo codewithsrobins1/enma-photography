@@ -396,6 +396,12 @@ body {
   width: 100%;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .nav-open__closet {
+    margin-bottom: 2rem;
+  }
+}
+
 .nav-open__closet h2 {
   font-size: 4rem;
 }

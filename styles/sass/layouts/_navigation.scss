@@ -104,7 +104,6 @@
         pointer-events: none; //can't click on any items from the nav
         overflow: scroll; /* Allowing scrolling for images */
 
-
         @include respond(desktop){
             width: 45%;
             height: 90%;
@@ -125,6 +124,7 @@
         @include respond(phone){
             width: 100%;
             top: 10%;
+            //Need to fix translateX on mobile - JS is messing up container location prior to animation
         }
 
         
@@ -247,6 +247,10 @@
             justify-content: space-around;
             align-items: center;
             width: 100%;
+            
+            @include respond(phone){
+                margin-bottom: 2rem;
+            }
 
             & h2{
                 font-size: 4rem;

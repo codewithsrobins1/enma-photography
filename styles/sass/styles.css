@@ -421,6 +421,12 @@ body {
   text-align: center;
 }
 
+@media only screen and (max-width: 37.5em) {
+  .nav-open__images {
+    padding-top: 3rem;
+  }
+}
+
 .nav-open__images--headers {
   font-size: 2rem;
   padding: 2rem 0;

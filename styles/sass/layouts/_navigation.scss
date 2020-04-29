@@ -292,7 +292,7 @@
             text-align: center;
 
             @include respond(phone){
-                
+                padding-top: 3rem;
             }
             
             &--headers{

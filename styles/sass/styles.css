@@ -19,24 +19,6 @@ body {
   font-family: 'Raleway', sans-serif;
 }
 
-@-webkit-keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .header {
   height: 100vh;
   position: relative;
@@ -55,15 +37,6 @@ body {
      object-fit: cover;
   -o-object-position: top;
      object-position: top;
-}
-
-.header-hero__image.animate {
-  -webkit-animation-name: fadein;
-          animation-name: fadein;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-timing-function: ease-out;
-          animation-timing-function: ease-out;
 }
 
 .nav {

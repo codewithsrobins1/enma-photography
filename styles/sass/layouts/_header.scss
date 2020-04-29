@@ -11,11 +11,5 @@
         right: 0;
         object-fit: cover; //Zoom into image so it doesn't look stretched out
         object-position: top; //Want to see more of the top of the image
-
-        &.animate{
-            animation-name: fadein;
-            animation-duration: 2s;
-            animation-timing-function: ease-out ;
-        }
     }
 }

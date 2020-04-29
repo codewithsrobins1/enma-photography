@@ -371,7 +371,7 @@ body {
 
 @media only screen and (max-width: 37.5em) {
   .nav-open__closet {
-    margin-bottom: 2rem;
+    margin: 3rem 0;
   }
 }
 
